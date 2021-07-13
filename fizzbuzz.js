@@ -27,8 +27,8 @@ const fs = require("fs");
 try {
 
   // append to file if it already exists
-  if (fs.existsSync("./tech-test/fizzbuzz.log")) {
-    fs.appendFile("./tech-test/fizzbuzz.log", stringResult, (error) => {
+  if (fs.existsSync("./fizzbuzz.log")) {
+    fs.appendFile("./fizzbuzz.log", stringResult, (error) => {
       if (error) {
         return console.error(error);
       }
@@ -36,7 +36,7 @@ try {
 
   // write to new file if it doesn't exist
   } else {
-    fs.writeFile("./tech-test/fizzbuzz.log", stringResult, (error) => {
+    fs.writeFile("./fizzbuzz.log", stringResult, (error) => {
       if (error) {
         return console.error(error);
       }
