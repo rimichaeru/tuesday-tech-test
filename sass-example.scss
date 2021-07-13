@@ -1,0 +1,36 @@
+/**** Widget Container ****/
+.widget-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 100px 100px 100px;
+  // center the grid on page
+}
+
+/**** Widget ****/
+.widget {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black
+
+  & label {
+    height: 20px;
+  }
+}
+
+/**** Specialised Widget ****/
+.special-widget {
+  background-color: grey;
+  grid-row: 1;
+
+  & > .content--red {
+    background-color: red;
+  }
+  &.special-widget__disabled {
+      opacity: 0.3;
+      pointer-events: none;
+  }
+  &:hover {
+      border-color: blue;
+  }
+}
