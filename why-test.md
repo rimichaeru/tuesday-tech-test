@@ -10,8 +10,8 @@
  
 
 ###### What best practices are there for testing software?
- - Keep describe testing blocks segmented for easy readability, and related cases within each block.
  - Small and specific: Opt for many small specific tests, rather than one test which covers many cases.
+ - Keep describe testing blocks segmented for easy readability, and contain related cases within each block.
  - Self-contained: Describe all relevant parameters, so that they may altered readily, and so that the inner functioning becomes clearer.
  - Dumb tests: Compare outputs with hard-coded values - avoids reusing production code which may be faulty, also use fixed data rather than random.
  - Use clear parameter naming conventions and test names. eg. "IT SHOULD", actualResult, expectedResult.
